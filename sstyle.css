@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+header{
+    height: 20vh;
+}
+.container{
+   display: flex;
+    justify-content:end ;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-left: 300px;
+    padding-top: 200;
+  text-align: center;
+
+}
+.inve{
+  background-color: black;
+  width: 150PX;
+  color: aliceblue;
+  font-size: 37px;
+ padding-right: 134px;
+}
+.stimento{
+  font-size: 37px;
+}
+.ronaldo{
+  font-size: 37px;
+    text-align: center;
+    padding-right: 200px;
+    padding-top: 200px;
+    }
+    .corretor{
+        text-align: center;
+    padding-right: 200px;
+    font-size: 37px;
+    }
+
+.primeiro{
+
+    padding-left: 75%;
+align-items: end;
+width: 100%;
+right: 180%;
+}
+.cubo{
+    position: relative;
+    display: flex;
+    border:1px solid black;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    display: flex;
+  justify-items: left; 
+}
+.segunda{
+    position: absolute;
+  bottom: 0;
+  right: 0;
+  width:714px;
+height: 452px;
+    background-image: url('imagens/imagem002.jpeg');
+  background-position: bottom right;
+  background-repeat: no-repeat;   
+}
+.my{
+  font-size: 37px;
+    color: aliceblue;
+text-align: center;
+    padding-left: 700px;
+}
+
+.missao{
+  font-size: 37px;
+    display: flex;
+    color: rgb(17, 100, 253);
+    padding-top: 240px;
+   padding-left: 400px;
+    text-align: center;
+    align-items: center;
+}
+.txt-missao{
+    color: rgb(17, 100, 253);
+   font-size: 37px;
+   padding-left: 80px;
+}
+.txt-imagem{
+  padding-top: 380px;
+padding-left: 500px;
+} 
+.imagem-informativa{
+ height: 300px;
+ width: 700px;
+ padding-left: 100px;
+margin: 5px;
+}
+
+.conteiner{
+  position:static;
+  width: 50%;
+  height:500px; 
+  background-image: url('imagens/imagem001.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white; 
+}
+
+
+.text {
+  position: initial;
+  top: 50px; 
+  left: 20px; 
+  font-size: 24px; 
+  padding-top: 230px;
+  padding-left: 300px;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.button {
+  
+  padding: 50px;
+  bottom: 20px; 
+  left: 20px; 
+  background-color: #eff0ef00;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 1px;
+  display: none;
+  cursor: pointer ;
+  font-size: 16px;
+    margin-left: 263px;
+}
+.conteiner:hover .button{
+  display: block;
+  
+  
+}
+.button:hover {
+  background-color: black;
+  color: white;
+}
+.conteiner:hover{
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100%;
+transition: 0.5s;
+}
+.quadrado{
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  background-color: lightgray;
+}
+
+nav#cubo{
+ 
+  align-items: end;
+  width: 400px;
+  height:600px;
+  background-color:white;  
+  color:black;
+  text-align: center;
+ flex: auto;
+}
+nav#cubo:hover{
+  box-shadow: 0px 6px 8px;
+  
+}
+.icones{
+  text-align: center;
+  
+ margin-bottom: 30px;
+}
+nav#cubo p{
+ margin-bottom: 10px;
+}
+.valor{
+  text-align: center;
+
+margin-bottom: 0px;
+
+}
+.codigo{
+  text-align:end ;
+}
+.igual{
+text-align: start;
+}
+.img {
+  transition: transform 0.3s ease;
+}
+
+.img:hover {
+  transform: scale(1.5);
+}
+.whatsapp-button {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.roda-pe{
+background-color: rgb(64, 62, 62);
+width: 100%;
+height: 400px;
+
+}
+
+
+.img1{ background-image: url(imagens/terreno-condominio.png);
+  background-position: center center;}
+  .img2{
+background-image: url(imagens/terreno.png);
+background-position: center center;}
+  
+  .img3{
+background-image: url(imagens/apartamento.png);
+background-position:center center;
+  }
+  .img4{
+    background-image: url(imagens/faixada-capiri.jpg);
+background-position:center center
+;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+  flex-wrap:wrap;
+  margin-top: 94px;
+ }
+  #cubo{
+    margin-left: 104px;
+  }
+  
+  .roow{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+  }
+ .controle{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+width: 400px;
+ }
+  .redes_sociais{
+    border-radius: 20px;
+ font-size: 100px;
+  }
+  .facebook{
+    width: 90px;
+    background-color: blue;
+  }
+  .instagram{
+    border-radius: 31px;
+    width: 90px;
+  background: linear-gradient(#405de6, #5851db ,#833ab4, #c13584, #e1306c, #fd1d1d);
+  }
+  .zap{
+    background-color: #25D366;
+  }
+.X{
+
+  background-color: black;
+}

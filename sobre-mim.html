@@ -1,0 +1,147 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RONADO BROKER</title>
+    <link rel="shortcut icon" href="imagens/imagem008.png" type="image/x-icon">
+   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="sstyle.css">
+<link rel="stylesheet" href="mobile.css">
+   <style>
+       .container {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px;
+        }
+        .container img {
+            width: 38%; /* A imagem ocupa metade da largura */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        .container .texto {
+            width: 50%; /* O texto ocupa a outra metade da largura */
+            padding-left: 20px; /* Espaço entre a imagem e o texto */
+            font-size: 1.2em; /* Aumenta o tamanho da fonte do texto[] */
+            line-height: 1.6; /* Aumenta o espaçamento entre linhas para facilitar a leitura */
+        }
+        ul {
+            margin: 2px; /* Margem da lista */
+        
+        }
+  </style>
+</head>
+<body>
+
+<nav class="basico">
+   <div class="roow">
+      <img src="imagens/imagem008.png" alt="imagem de perdfil" class="foto-perfil" >
+      <p>ronaldo broker</p></div>
+    <div class="navigation">
+        <i class="bi bi-list" id="btn-exp"></i>
+    </div>
+          <ul>
+            <li class="list ">
+               <a href="index.html">
+            <span class="icon" > <i class="fa-solid fa-house"></i></span>
+            <span class="txt-link">home</span>
+              </a>
+           </li>
+    
+           <li class="list ">
+            <a href="comprar.html">
+         <span class="icon"> <i class="bi bi-houses-fill"></i></span>
+         <span class="txt-link"> compra imoveis</span>
+           </a>
+        </li>
+    
+      
+
+        <li class="list">
+         <a href="https://airgo.bio/7a45a48f" target="_blank">
+         <span class="icon"> <i class="bi bi-buildings-fill"></i></span>
+         <span class="txt-link">avaliaçao imobiliaria</span>
+           </a>
+        </li>
+       
+        <li class="list ativo">
+            <a href="sb-index.html">
+         <span class="icon">   <i class="bi bi-person-vcard"></i></span>
+         <span class="txt-link">sobre mim</span>
+         <span>
+            
+         </span>
+           </a>
+        </li>
+
+        
+         </ul>
+   
+</nav>
+
+<header>
+   <h2>Seja bem vindo <br>ao site do ronaldo broker me diga oque procura aqui</h2>
+</header>
+<div class="container">
+   <img src="imagens/imagem001.jpeg" alt="Ronaldo Júnior">
+   <div class="texto">
+       <p>
+           Meu nome é Ronaldo Júnior, tenho 24 anos, e uma bagagem imensa. Cursei ciências aeronáuticas com 15 anos de idade, fui militar, técnico e várias outras profissões…
+           Tenho 4 anos de mercado imobiliário, mais de 20 milhões vendidos. Vim do exército, onde aprendi a ter respeito, valores e ética, que em lugar nenhum no mundo poderia ter esse conhecimento.
+           Amo o mercado imobiliário. Meu principal objetivo é alinhar seus sonhos com o meu propósito nesta profissão.
+           Que é?
+           “Transformar a vida das pessoas por meio de negócios imobiliários bem-sucedidos.”
+           Me especializei em várias áreas do mercado imobiliário, dentre elas:
+           <ul>
+               <li>Perito judicial</li>
+               <li>Matemática financeira</li>
+               <li>Lucro imobiliário</li>
+               <li>Locação e administração de aluguéis</li>
+               <li>Avaliação imobiliária</li>
+               <li>Certificados abaixo ⬇</li>
+           </ul>
+           Agradeço pela confiança em meu trabalho. Vou me empenhar para garantir o melhor investimento para você!
+       </p>
+   </div>
+</div>
+
+<footer>
+   <footer class="roda-pe">
+      <h1>
+         me siga nas redes sociais 
+      </h1>
+      <div class="controle">
+    <div class="redes_sociais zap"><a href="https://web.whatsapp.com/send?phone=556286254895" id="contato" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #f9fafa;"></i></a></div> 
+   
+   
+    <div class="redes_sociais instagram"> <a href="#" target="_blank"> <i class="fa-brands fa-instagram" style="color: #fcfcfc;"></i>
+   </a></div> 
+   
+   <div class="redes_sociais facebook" > <a href="#" target="_blank">
+      <i class="fa-brands fa-facebook-f" style="color: #f2f0e8;"></i>
+     </a>    </div> 
+   
+     <div class="redes_sociais X"> <a href="#" target="_blank" ><i class="fa-brands fa-x-twitter" style="color: #f7f7f7;"></i>
+   </a></div> 
+   </div>
+</footer>
+
+<div class="buttonzap" id="whatsapp">
+   <a href="https://web.whatsapp.com/send?phone=556286254895" class="icone" id="whatsapp"    
+    target="_blank"><i class="fab fa-whatsapp"></i></a>
+   </div>
+<script src="menu.js"></script>
+<script>
+   document.querySelectorAll('.whatsapp-button').forEach(button => {
+    button.onclick = function() {
+        const messageKey = this.id;
+        const message = encodeURIComponent(messages[messageKey]);
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+        window.open(whatsappUrl, '_blank'); // Abre o WhatsApp com a mensagem
+    };
+});
+
+</script>
+</body>
+
+</html>
