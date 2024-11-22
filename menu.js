@@ -15,7 +15,7 @@ menuitem.forEach((item) =>
 
 // Expandir menu //
 var btnExp = document.querySelector('#btn-exp');
-var menuSide = document.querySelector('.basico'); 
+var menuSide = document.querySelector('.sidebar'); 
 
 btnExp.addEventListener('click', function() {
     menuSide.classList.toggle('expandir'); 
