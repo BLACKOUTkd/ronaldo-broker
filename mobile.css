@@ -1,0 +1,426 @@
+@charset "UTF-8";
+
+
+
+.container{
+    display: flex;
+     justify-content:end ;
+     align-items: flex-end;
+     justify-content: flex-start;
+     padding-left: 0px;
+     padding-top: 100PX;
+   text-align: start;
+}
+.inve{
+  
+    background-color: black;
+    width: 150PX;
+    color: aliceblue;
+    font-size: 37px;
+   padding-right: 40px;
+   
+  }
+
+  .stimento{
+    font-size: 37px;
+    padding-top: 200px;
+  }
+.ronaldo{
+font-size: 31px;
+text-align: start;
+padding-top: 200px;
+}
+.corretor{
+    text-align: start;
+padding-left: 40px;
+font-size: 37px;
+}
+.primeiro{
+
+padding-left: 60%;
+align-items: end;
+width: 100%;
+right: 100%;
+} 
+
+.cubo{
+    position: relative;
+    display: flex;
+    border:1px solid black;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    display: flex;
+  justify-items: left; 
+}
+
+.segunda{
+    position: absolute;
+  bottom: 0;
+  right: 0;
+  width:700px;
+height: 700px;
+    background-image: url('imagens/imagem002.jpeg');
+  background-position: bottom right;
+  background-repeat: no-repeat;   
+}
+
+.my{
+    font-size: 37px;
+      color: aliceblue;
+  text-align: center;
+      padding-left: 250px;
+  }
+
+  .missao{
+    font-size: 30px;
+      display: flex;
+      color: rgb(17, 100, 253);
+      padding-top: 240px;
+     padding-left: 140px;
+      text-align: center;
+      align-items: center;
+  }
+
+  .txt-missao{
+    color: rgb(17, 100, 253);
+   font-size: 20px;
+}
+
+.txt-imagem{
+    padding-top: 628px;
+  padding-left: 0px ;
+  } 
+
+  img.imagem-informativa{
+    height: 400px;
+    width: 800px; 
+   padding-left: 100px;
+   margin: 5px;
+   }
+
+   .text {
+    position: initial;
+    top: 50px; 
+    left: 20px; 
+    font-size: 24px; 
+    padding-top: 230px;
+    padding-left: 190px;
+    margin-left: auto;
+    margin-top: auto;
+  }
+  .button {
+    padding: 50px;
+    bottom: 20px; 
+    left: 20px; 
+    background-color: #eff0ef00;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 1px;
+    display: none;
+    cursor: pointer ;
+    font-size: 16px;
+      margin-left: 152px;
+
+     
+  }
+  .prev, .next {
+    cursor: pointer;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 4200;
+    transform: translateY(-50%);
+    z-index: 10;
+   }
+
+   .next {
+    right: 700px;
+   }
+@media   (max-width: 768px) {
+ 
+  .prev, .next {
+    cursor: pointer;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 2400px;
+    transform: translateY(-50%);
+    z-index: 100;
+   }
+
+   .next {
+    right: 500px;
+   }
+
+.container{
+  display: flex;
+   justify-content:end ;
+   align-items: flex-end;
+   justify-content: flex-start;
+   padding-left: 0px;
+   padding-top: 100PX;
+ text-align: start;
+}
+.inve{
+  background-color: black;
+  width: 143PX;
+  color: aliceblue;
+  font-size: 36px;
+ padding-right: 10px;
+ 
+}
+
+.stimento{
+  font-size: 36px;
+  padding-top: 80px;
+}
+.ronaldo{
+font-size: 31px;
+text-align: start;
+padding-top: 200px;
+}
+.corretor{
+  text-align: start;
+padding-left: 40px;
+font-size: 37px;
+}
+.primeiro{
+
+padding-left: 60%;
+align-items: end;
+width: 100%;
+right: 100%;
+} 
+
+.cubo{
+  position: relative;
+  display: flex;
+  border:1px solid black;
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  display: flex;
+justify-items: left; 
+}
+
+.segunda{
+  position: absolute;
+bottom: 0;
+right: 0;
+width:1000px;
+height: 700px;
+  background-image: url('imagens/imagem002.jpeg');
+background-position: bottom right;
+background-repeat: no-repeat;   
+}
+
+.my{
+  font-size: 37px;
+    color: aliceblue;
+text-align: center;
+    padding-left: 270px;
+}
+
+.missao{
+  font-size: 20px;
+    display: flex;
+    color: rgb(17, 100, 253);
+    padding-top: 375px;
+  
+    text-align: center;
+    align-items: center;
+}
+
+.txt-missao{
+  color: rgb(17, 100, 253);
+ font-size: 20px;
+ padding-left: 80px;
+}
+
+.txt-imagem{
+  padding-top: 628px;
+
+} 
+
+img.imagem-informativa{
+  
+  width: 100%; 
+ padding-left: 0px;
+ margin: 5px;
+ }
+
+ .text {
+  position: initial;
+  top: 50px; 
+  left: 20px; 
+  font-size: 24px; 
+  padding-top: 230px;
+  padding-left: 150px;
+  margin-left: auto;
+  margin-top: auto;
+}
+.button {
+  padding: 50px;
+  bottom: 20px; 
+  left: 20px; 
+  background-color: #eff0ef00;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 1px;
+  display: none;
+  cursor: pointer ;
+  font-size: 16px;
+    margin-left: 115px;
+}
+}
+@media (max-width: 480px){
+ 
+.container{
+  display: flex;
+   justify-content:end ;
+   align-items: flex-end;
+   justify-content: flex-start;
+   padding-left: 0px;
+   padding-top: 100PX;
+ text-align: start;
+}
+.inve{
+  font-size: 15px;
+  background-color: black;
+  width: 80px;
+  color: aliceblue;
+  font-size: 20px;
+ padding-right: 20px;
+ margin-left:  1px;
+}
+
+.stimento{
+  font-size: 18px;
+  padding-top: 80px;
+}
+.ronaldo{
+font-size: 20px;
+text-align: start;
+padding-top: 90px;
+}
+.corretor{
+  text-align: start;
+padding-left: 40px;
+font-size: 20px;
+}
+.primeiro{
+  padding-left: 230px;
+  }
+
+.cubo{
+  position: relative;
+  display: flex;
+  border:1px solid black;
+  width: 100%;
+  height: 400px 0px;
+  background-color: black;
+  display: flex;
+justify-items: left; 
+}
+
+.segunda{
+  position: absolute;
+bottom: 0;
+right: 69;
+width:450px;
+height: 450px;
+  background-image: url('imagens/imagem002.jpeg');
+background-position: center right ;
+background-repeat: no-repeat;
+
+}
+
+.my{
+  font-size: 37px;
+    color: aliceblue;
+text-align: center;
+    padding-left: 110px;
+}
+.sidebar{
+  height: 12%;
+}
+.missao{
+  font-size: 20px;
+    display: flex;
+    color: black;
+    padding-top: 200px;
+}
+
+.txt-missao{
+  color: black;
+ font-size: 20px;
+}
+
+.txt-imagem{
+  padding-top: 330px;
+padding-left:10px ;
+} 
+
+img.imagem-informativa{
+  height: 200px;
+  width: 400px;
+ margin: 5px;
+ padding: 0px;
+ }
+
+ .text {
+  position: initial;
+  top: 50px; 
+  left: 20px; 
+  font-size: 24px; 
+  padding-top: 150px;
+  padding-left: 100px;
+  margin-left: auto;
+  margin-top: auto;
+}
+.button {
+  padding: 50px;
+  bottom: 20px; 
+  left: 20px; 
+  background-color: #eff0ef00;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 1px;
+  display: none;
+  cursor: pointer ;
+  font-size: 16px;
+    margin-left: 65px;
+}
+
+}
+.prev, .next {
+  cursor: pointer;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 2400px;
+  transform: translateY(-50%);
+  z-index: 10;
+ }
+
+ .next {
+  right: 96px;
+ }
+ 
+#cubo{
+ 
+  margin-left: 0px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+ 
+  flex-wrap:nowrap;
+  gap: 80px;
+  margin: 0px;
+  margin-top: 0px;
+}

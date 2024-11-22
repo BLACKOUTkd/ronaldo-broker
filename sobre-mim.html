@@ -1,97 +1,110 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Definição da codificação de caracteres e responsividade -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RONADO BROKER</title>
+    <!-- Favicon para o site -->
     <link rel="shortcut icon" href="imagens/imagem008.png" type="image/x-icon">
-   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="sstyle.css">
-<link rel="stylesheet" href="mobile.css">
-   <style>
+    <!-- Inclusão de fontes e ícones de bibliotecas externas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Arquivos de estilo externos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sstyle.css">
+    <!-- Estilos internos -->
+    <style>
+       /* Estilo para o container que contém a imagem e o texto lado a lado */
        .container {
             display: flex;
             align-items: flex-start;
             margin: 20px;
         }
+        /* Ajusta o tamanho da imagem dentro do container */
         .container img {
-            width: 38%; /* A imagem ocupa metade da largura */
+            width: 38%; /* A imagem ocupa 38% da largura do container */
             height: auto; /* Mantém a proporção da imagem */
         }
+        /* Estilo para o bloco de texto */
         .container .texto {
-            width: 50%; /* O texto ocupa a outra metade da largura */
-            padding-left: 20px; /* Espaço entre a imagem e o texto */
-            font-size: 1.2em; /* Aumenta o tamanho da fonte do texto[] */
-            line-height: 1.6; /* Aumenta o espaçamento entre linhas para facilitar a leitura */
+            width: 50%; /* O texto ocupa 50% da largura do container */
+            padding-left: 20px; /* Adiciona espaço à esquerda entre imagem e texto */
+            font-size: 1.2em; /* Aumenta o tamanho da fonte do texto */
+            line-height: 1.6; /* Aumenta o espaçamento entre as linhas para melhorar a legibilidade */
         }
+        /* Estilos para as listas */
         ul {
-            margin: 2px; /* Margem da lista */
-        
+            margin: 2px; /* Define a margem da lista */
         }
-  </style>
+    </style>
 </head>
 <body>
 
-<nav class="basico">
-   <div class="roow">
-      <img src="imagens/imagem008.png" alt="imagem de perdfil" class="foto-perfil" >
-      <p>ronaldo broker</p></div>
+<!-- Início da barra lateral de navegação -->
+<nav class="sidebar">
+   <div class="perfil">
+      <!-- Imagem do perfil do usuário -->
+      <img src="imagens/imagem008.png" alt="imagem de perfil" class="foto-perfil">
+      <p class="txt-perfil">ronaldo broker</p>
+   </div>
+    <!-- Ícone para expandir a navegação -->
     <div class="navigation">
         <i class="bi bi-list" id="btn-exp"></i>
     </div>
-          <ul>
-            <li class="list ">
-               <a href="index.html">
-            <span class="icon" > <i class="fa-solid fa-house"></i></span>
-            <span class="txt-link">home</span>
-              </a>
-           </li>
-    
-           <li class="list ">
-            <a href="comprar.html">
-         <span class="icon"> <i class="bi bi-houses-fill"></i></span>
-         <span class="txt-link"> compra imoveis</span>
-           </a>
-        </li>
-    
-      
-
+    <!-- Lista de navegação -->
+    <ul>
+        <!-- Link para a página inicial -->
         <li class="list">
-         <a href="https://airgo.bio/7a45a48f" target="_blank">
-         <span class="icon"> <i class="bi bi-buildings-fill"></i></span>
-         <span class="txt-link">avaliaçao imobiliaria</span>
-           </a>
-        </li>
-       
-        <li class="list ativo">
-            <a href="sb-index.html">
-         <span class="icon">   <i class="bi bi-person-vcard"></i></span>
-         <span class="txt-link">sobre mim</span>
-         <span>
-            
-         </span>
+           <a href="index.html">
+              <span class="icon"><i class="fa-solid fa-house"></i></span>
+              <span class="txt-link">Home</span>
            </a>
         </li>
 
-        
-         </ul>
-   
+        <!-- Link para a página de compra de imóveis -->
+        <li class="list">
+           <a href="comprar.html">
+              <span class="icon"><i class="bi bi-houses-fill"></i></span>
+              <span class="txt-link">Compra Imoveis</span>
+           </a>
+        </li>
+
+        <!-- Link para a página de avaliação imobiliária -->
+        <li class="list">
+           <a href="https://airgo.bio/7a45a48f" target="_blank">
+              <span class="icon"><i class="bi bi-buildings-fill"></i></span>
+              <span class="txt-link">Avaliação Imobiliária</span>
+           </a>
+        </li>
+
+        <!-- Link para a página 'Sobre Mim', com destaque para a página ativa -->
+        <li class="list ativo">
+           <a href="sobre-mim.html">
+              <span class="icon"><i class="bi bi-person-vcard"></i></span>
+              <span class="txt-link">Sobre Mim</span>
+           </a>
+        </li>
+    </ul>
 </nav>
 
-<header>
-   <h2>Seja bem vindo <br>ao site do ronaldo broker me diga oque procura aqui</h2>
-</header>
+<!-- Conteúdo principal com a imagem e texto do "Sobre Mim" -->
 <div class="container">
+   <!-- Imagem de perfil do Ronaldo -->
    <img src="imagens/imagem001.jpeg" alt="Ronaldo Júnior">
    <div class="texto">
        <p>
-           Meu nome é Ronaldo Júnior, tenho 24 anos, e uma bagagem imensa. Cursei ciências aeronáuticas com 15 anos de idade, fui militar, técnico e várias outras profissões…
-           Tenho 4 anos de mercado imobiliário, mais de 20 milhões vendidos. Vim do exército, onde aprendi a ter respeito, valores e ética, que em lugar nenhum no mundo poderia ter esse conhecimento.
-           Amo o mercado imobiliário. Meu principal objetivo é alinhar seus sonhos com o meu propósito nesta profissão.
-           Que é?
-           “Transformar a vida das pessoas por meio de negócios imobiliários bem-sucedidos.”
+           <!-- Apresentação pessoal e experiência de Ronaldo -->
+           Meu nome é Ronaldo Júnior, tenho 24 anos, e uma bagagem imensa. <br>
+           Cursei ciências aeronáuticas com 15 anos de idade, fui militar, técnico e várias outras profissões… <br>
+           Tenho 4 anos de mercado imobiliário, mais de 20 milhões vendidos. <br>
+           Vim do exército, onde aprendi a ter respeito, valores e ética, que em lugar nenhum no mundo poderia ter esse conhecimento. <br>
+           Amo o mercado imobiliário. <br>
+           Meu principal objetivo é alinhar seus sonhos com o meu propósito nesta profissão. <br>
+           Que é? <br>
+           “Transformar a vida das pessoas por meio de negócios imobiliários bem-sucedidos.” <br>
            Me especializei em várias áreas do mercado imobiliário, dentre elas:
+           <!-- Lista de áreas de especialização -->
            <ul>
                <li>Perito judicial</li>
                <li>Matemática financeira</li>
@@ -99,39 +112,44 @@
                <li>Locação e administração de aluguéis</li>
                <li>Avaliação imobiliária</li>
                <li>Certificados abaixo ⬇</li>
+               <!-- Links para os certificados e cursos -->
+               <a href="https://drive.google.com/file/d/16J-TNOFR4xNr4k6k6Y_sQOT5njxM56S2/view" target="_blank" class="centificados"><li>Lucro imobiliário</li></a>
+               <a href="https://drive.google.com/file/d/1YmTMpSudyOxkmPWzLA_aOunLgq_KnPDR/view" target="_blank"><li>Locação e administração de imóvel</li></a>
+               <a href="https://drive.google.com/drive/folders/1-D4q8xEenAWueA9rXjPWbJ0YDUu3TANy" target="_blank"><li>Perito judicial</li></a>
+               <a href="https://drive.google.com/file/d/1E8henJgxe9RAtGpAtZ70uzghE4srexH4/view" target="_blank"><li>Calculadora HP12C</li></a>
            </ul>
+           <!-- Agradecimento ao cliente -->
            Agradeço pela confiança em meu trabalho. Vou me empenhar para garantir o melhor investimento para você!
        </p>
    </div>
 </div>
 
+<!-- Rodapé com links para redes sociais -->
 <footer>
    <footer class="roda-pe">
-      <h1>
-         me siga nas redes sociais 
-      </h1>
       <div class="controle">
-    <div class="redes_sociais zap"><a href="https://web.whatsapp.com/send?phone=556286254895" id="contato" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #f9fafa;"></i></a></div> 
-   
-   
-    <div class="redes_sociais instagram"> <a href="#" target="_blank"> <i class="fa-brands fa-instagram" style="color: #fcfcfc;"></i>
-   </a></div> 
-   
-   <div class="redes_sociais facebook" > <a href="#" target="_blank">
-      <i class="fa-brands fa-facebook-f" style="color: #f2f0e8;"></i>
-     </a>    </div> 
-   
-     <div class="redes_sociais X"> <a href="#" target="_blank" ><i class="fa-brands fa-x-twitter" style="color: #f7f7f7;"></i>
-   </a></div> 
-   </div>
+         <!-- Ícone de Instagram -->
+         <div class="redes_sociais instagram"> 
+            <a href="https://www.instagram.com/ronaldobrokerofc/profilecard/?igsh=cTF2cDVoNHZ2M2lm" target="_blank"> 
+               <i class="fa-brands fa-instagram" style="color: #fcfcfc;"></i>
+            </a>
+         </div> 
+      </div>
+   </footer>
 </footer>
 
+<!-- Ícone flutuante de WhatsApp -->
 <div class="buttonzap" id="whatsapp">
-   <a href="https://web.whatsapp.com/send?phone=556286254895" class="icone" id="whatsapp"    
-    target="_blank"><i class="fab fa-whatsapp"></i></a>
-   </div>
+   <a href="https://web.whatsapp.com/send?phone=556286254895" class="icone" id="whatsapp" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+   </a>
+</div>
+
+<!-- Inclusão do arquivo JavaScript para interatividade -->
 <script src="menu.js"></script>
+
 <script>
+   // Script para enviar mensagens no WhatsApp (não está sendo utilizado no momento)
    document.querySelectorAll('.whatsapp-button').forEach(button => {
     button.onclick = function() {
         const messageKey = this.id;
@@ -140,8 +158,7 @@
         window.open(whatsappUrl, '_blank'); // Abre o WhatsApp com a mensagem
     };
 });
-
 </script>
-</body>
 
+</body>
 </html>

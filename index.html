@@ -1,365 +1,317 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width-device-widthv, initial-scale=1.0" />
-    <title>RONADO BROKER</title>
+    <!-- Configurações principais da página -->
+    <meta charset="UTF-8"> <!-- Define o padrão de codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva -->
+    <title>RONADO BROKER</title> <!-- Título da página que será exibido na aba do navegador -->
+
+    <!-- Ícone de atalho (favicon) -->
     <link rel="shortcut icon" href="imagens/imagem008.png" type="image/x-icon">
-    <LINK:favicon></LINK:favicon>
-   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesume/6.0.0/css/all.min.css">
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="sstyle.css">
-<link rel="stylesheet" href="mobile.css" media="screen and  (max-width: 1200px)">
+
+    <!-- Importação de estilos externos -->
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Arquivo CSS personalizado -->
+    <link rel="stylesheet" href="sstyle.css"> <!-- Outro arquivo CSS personalizado -->
+<link rel="stylesheet" href="mobile.css">
 </head>
 
 <style>
-   main{
-      text-align: center;
-   }
-   
-   .slides {
-     
- display: flex;
- overflow: hidden;
- width: 400px; 
+/* Estilos diretamente no arquivo HTML */
 
- 
+/* Ajuste da imagem principal */
+.imagem-informativa {
+    height: 650px;
+    width: 1400px;
+    padding-left: 100px;
+    margin: 5px;
 }
+
+/* Centraliza o conteúdo principal */
+main {
+    text-align: center;
+}
+
+/* Configurações de layout do slider */
+.slides {
+    display: flex;
+    overflow: hidden;
+    width: 400px;
+}
+
 .slides:hover {
- box-shadow: 0px 6px 8px; 
-
+    box-shadow: 0px 6px 8px;
 }
 
-
-
+/* Estilo do quadrado */
 .quadrado {
- width: 100%; 
- height: 500px; 
+    width: 100%;
+    height: 500px;
 }
-.codigo{
-padding-left: 350px;
 
+/* Ajustes para códigos e valores */
+.codigo {
+    padding-left: 350px;
 }
-.igual,.valor{
-text-align: start;
+
+.igual, .valor {
+    text-align: start;
 }
 
 .codigo, .igual, .valor {
- margin: 10px 0; 
- text-align: center; 
+    margin: 10px 0;
+    text-align: center;
 }
 
-
-
+/* Botões de navegação no slider */
 .prev, .next {
- cursor: pointer;
- font-size: 24px;
- background-color: transparent;
- border: none;
- position: absolute;
- top: 3080;
- transform: translateY(-50%);
- z-index: 10;
- 
+    cursor: pointer;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    padding-top: 500px;
+    transform: translateY(-50%);
+    z-index: 10;
 }
+
 .whatsapp-button {
-background-color: #25D366;
-color: white;
-border: none;
-padding: 10px 20px;
-border-radius: 5px;
-cursor: pointer;
-font-size: 16px;
-margin: 5px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
 }
+
 .prev {
- left: 5px;
+    left: 5px;
 }
 
 .next {
- right: 1115px;
+    right: 73%;
 }
 
-.igual{
-text-align: start;
-}
-#q1{
- position: static;
- display: flex;
- flex-direction: column; 
- align-items: center; 
- min-width: 100%;
- transition: transform 0.5s ease;
- height: 600px;
- background-color: white;
-
-}
-
-#q2{
-position:static;
-display: flex;
- flex-direction: column; 
- align-items: center; 
- min-width: 100%;
- transition: transform 0.5s ease;
- height: 600px;
- background-color: white;
-
-}
-
-#q3{
-position: static;
-display: flex;
- flex-direction: column; 
- align-items: center; 
- min-width: 100%;
- transition: transform 0.5s ease;
- height: 600px;
- background-color: white;
-
-}
-
-#q4{
-position: static;
-display: flex;
- flex-direction: column; 
- align-items: center; 
- min-width: 100%;
- transition: transform 0.5s ease;
- height: 600px;
- background-color: white;
-
+/* Sessões diferentes */
+#q1, #q2, #q3, #q4 {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    transition: transform 0.5s ease;
+    height: 600px;
+    background-color: white;
 }
 
 
-.roda-pe{
-  background-color: black;
-  width: 100%;
-  height: 400px;
-  display: block;
-  color: aliceblue;
-}
 
 </style>
+
 <body>
 
+<!-- Cabeçalho -->
+<header>
+    <div class="container">
+        <div class="inve">
+            <h1>Inve</h1> <!-- Parte do título -->
+        </div>
+        <div class="stimento">
+            <h1>stimento </h1> <!-- Outra parte do título -->
+        </div>
+    </div>
+    <div class="ronaldo">
+        <h2>RONALDO BROKER</h2> <!-- Nome principal -->
+    </div> 
+    <div>
+        <h2 class="corretor">Corretor de Imoveis</h2> <!-- Subtítulo -->
+    </div>
+</header>
 
-   <header >
-      <div class="container">
-         
-         <div class="inve">
-            <h1>Inve</h1>
-              </div>
-           <div class="stimento">
-         <h1>stimento </h1>
-         </div>
-      </div>
-      <div class="ronaldo">
-         <h2  >
-            RONALDO BROKER  
-         </h2>
-      </div> 
-         <div >
-          <h2 class="corretor">
-   Corretor de Imoveis
-         </h2>
-         </div>
-     
-     
-   </header>
-   <img src="imagens/imagem001.jpeg" alt="" class="primeiro">
-   <main class="cubo">
-      <div class="segunda">
-         <p class="txt-imagem">
-            Uma empresabr
-             <br> legitimamente <br>goiana, com sede na <br> ricardo paranhos
+<!-- Imagem inicial -->
+<img src="imagens/imagem001.jpeg" alt="" class="primeiro">
 
-         </p>
-      </div>
-      <div>
-         <h1 class="my">MY BROKER</h1>
-         
-         <h1 class="missao">Nossa Missão</h1>
-         <p class="txt-missao">Transformar a vida <br>das pessoas por meio <br> de negocios imobiliarios <br> bem sucedidos</p>
-         </div> 
-   </main>
+<!-- Conteúdo principal -->
+<main class="cubo">
+    <div class="segunda"></div>
+    <div>
+        <h1 class="my">MY BROKER</h1> <!-- Título principal -->
+        <h1 class="missao">Nossa Missão</h1> <!-- Missão da empresa -->
+        <p class="txt-missao">
+            Transformar a vida <br>das pessoas por meio <br> 
+            de negócios imobiliários <br> bem-sucedidos
+        </p>
+    </div> 
+</main>
 
-<nav class="basico">
-
-<div class="roow">
-   <img src="imagens/imagem008.png" alt="imagem de perdfil" class="foto-perfil" >
-   <p>ronaldo broker</p></div>
+<!-- Barra lateral (navegação) -->
+<nav class="sidebar">
+    <div class="perfil">
+        <img src="imagens/imagem008.png" alt="imagem de perfil" class="foto-perfil">
+        <p class="txt-perfil">ronaldo broker</p> <!-- Nome do corretor -->
+    </div>
     <div class="navigation">
-        <i class="bi bi-list" id="btn-exp"></i>
+        <i class="bi bi-list" id="btn-exp"></i> <!-- Botão para expandir/recolher menu -->
     </div>
   
-          <ul>
-            <li class="list ativo">
-               <a href="index.html">
-            <span class="icon" > <i class="fa-solid fa-house"></i></span>
-            <span class="txt-link">home</span>
-              </a>
-           </li>
+    <ul>
+        <li class="list ativo">
+            <a href="index.html">
+                <span class="icon"><i class="fa-solid fa-house"></i></span>
+                <span class="txt-link">Home</span>
+            </a>
+        </li>
     
-           <li class="list ">
+        <li class="list">
             <a href="comprar.html">
-         <span class="icon"> <i class="bi bi-houses-fill"></i></span>
-         <span class="txt-link"> compra imoveis</span>
-           </a>
+                <span class="icon"><i class="bi bi-houses-fill"></i></span>
+                <span class="txt-link">Comprar Imóveis</span>
+            </a>
         </li>
     
         <li class="list">
-         <a href="lançamentos.html">
-      <span class="icon"> <i class="bi bi-houses-fill"></i></span>
-      <span class="txt-link">lançamentos</span>
-      <span>
-         
-      </span>
-        </a>
-     </li>
-
-        <li class="list">
-         <a href="https://airgo.bio/7a45a48f" target="_blank">
-         <span class="icon"> <i class="bi bi-buildings-fill"></i></span>
-         <span class="txt-link">avaliaçao imobiliaria</span>
-           </a>
+            <a href="https://airgo.bio/7a45a48f" target="_blank">
+                <span class="icon"><i class="bi bi-buildings-fill"></i></span>
+                <span class="txt-link">Avaliação Imobiliária</span>
+            </a>
         </li>
        
         <li class="list">
-            <a href="sb-index.html">
-         <span class="icon">   <i class="bi bi-person-vcard"></i></span>
-         <span class="txt-link">sobre mim</span>
-         <span>
-            
-         </span>
-           </a>
+            <a href="sobre-mim.html">
+                <span class="icon"><i class="bi bi-person-vcard"></i></span>
+                <span class="txt-link">Sobre Mim</span>
+            </a>
         </li>
-
-        
-         </ul>
-    
+    </ul>
 </nav>
 
 
-   <div><img src="imagens/imagem003.jpeg" alt="imagem-informativa" class="imagem-informativa"  ></div>
-    
-   <div><img src="imagens/imagem004.jpg" alt="imagem-informativa" class="imagem-informativa" ></div>
-   
-   <div ><img src="imagens/imagem005.jpeg" alt="imagem-informativa" class="imagem-informativa" ></div>
-   
-   <div><img src="imagens/imagem006.jpeg" alt="imagem-informativa" class="imagem-informativa "  ></div>
-   
-   <div ><img src="imagens/imagem007.jpeg" alt="imagem-informativa" class="imagem-informativa" ></div>
-</nav>
+<!-- Imagens informativas (galeria de imagens) -->
+<div><img src="imagens/imagem003.jpeg" alt="imagem-informativa" class="imagem-informativa"></div>
+<div><img src="imagens/imagem004.jpg" alt="imagem-informativa" class="imagem-informativa"></div>
+<div><img src="imagens/imagem005.jpeg" alt="imagem-informativa" class="imagem-informativa"></div>
+<div><img src="imagens/imagem006.jpeg" alt="imagem-informativa" class="imagem-informativa"></div>
+<div><img src="imagens/imagem007.jpeg" alt="imagem-informativa" class="imagem-informativa"></div>
 
+<!-- Carrossel de anúncios imobiliários -->
+<div class="carrossel">
 
+    <!-- Botões de navegação para o carrossel -->
+<button class="prev" onclick="moveSlide(-1)">&#10094;</button> <!-- Botão anterior -->
+<button class="next" onclick="moveSlide(1)">&#10095;</button> <!-- Botão próximo -->
 
+    <!-- Container das slides -->
+    <div class="slides">
 
+        <!-- Primeiro item do carrossel -->
+        <article class="cubo" id="q1">
+            <!-- Imagem do imóvel -->
+            <div class="quadrado img1"></div>
 
- 
+            <!-- Código do imóvel -->
+            <p class="codigo">45256</p>
 
- <div class="carrossel">
-  
-   <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-   <button class="next" onclick="moveSlide(1)">&#10095;</button>
-   <div class="slides">
-      <article class="cubo" id="q1">
-        
-          <div class="quadrado img1"></div>
-          <p class="codigo">45256</p>
-          <div>
-          <p class="igual">TERRENO CONDOMINIO
-          </p>
-          <p class="igual">Avenida Pinheiros, Parqville Pinheiros, Aparecida de Goiânia -GO
-            74945-637</p>
-          </div>
-          <p>  <span class="icones">
-            <i class="fa-solid fa-ruler-horizontal"> 446m² </i>
-         </span>
+            <!-- Detalhes do imóvel -->
+            <div>
+                <p class="igual">TERRENO CONDOMINIO</p>
+                <p class="igual">
+                    Avenida Pinheiros, Parqville Pinheiros, Aparecida de Goiânia -GO 74945-637
+                </p>
+            </div>
 
-          
-         
-        </span> </p>
-          <p class="valor">535.704,00</p>
-          <button class="whatsapp-button" id="45256">Negocie aqui</button>
-      </article>
+            <!-- Informações adicionais -->
+            <p>
+                <span class="icones">
+                    <i class="fa-solid fa-ruler-horizontal"> 446m² </i>
+                </span>
+            </p>
 
-      <article class="cubo" id="q2">
-          <div class="quadrado img2"></div>
-          <p class="codigo">75398</p>
-          <p class="igual">TERRENO SETOR BUENO</p>
-          <p class="igual">T-15, 00, SETOR BUENO, Goiânia -GO
-            74230-010</p>
-          <p>  <span class="icones">
-            <i class="fa-solid fa-ruler-horizontal"> 382m²  </i>
-         </span>
-          </p>
-          <p class="valor">1.100.000,00</p>
-          <button class="whatsapp-button" id="75398">Negocie aqui</button>
-      </article>
-     
-      <article class="cubo" id="q3">
-          <div class="quadrado img3" ></div>
-         
-          <p class="codigo">80943</p>
-          <p class="igual">APARTAMENTO</p>
-          <p class="igual" >Rua 25 A, 253, Setor Aeroporto, Goiânia -GO
-            74070-150
-           </p>
-          <p>  <span class="icones">
-            <i class="fa-solid fa-ruler-horizontal"> 118.75 m² </i>
-         </span>
-         <span class="icones">
-            <i class="fa-solid fa-bed"> 3</i>
-        </span>
-        <span class="icones">
-          <i class="fa-solid fa-shower">2</i>
-        </span>
-        
-        </span>
-            <i class="fa-solid fa-bath">1</i>
-        </span>
-        <span class="icones">
-          <i class="fa-solid fa-car"> 2</i>
-          </p>
-          <p class="valor">690.000,00</p>
-          <button class="whatsapp-button" id="80943">Negocie aqui</button>
-          
-      </article>
-      <article class="cubo" id="q4">
-         <div class="quadrado img4" ></div>
-        
-         <p class="codigo">90400</p>
-         <p class="igual">casa jardins capiri, senador canedo</p>
-         <p class="igual">condominio jardins capiri<br> quadra 01 lote 10
-          </p>
-         <p>  <span class="icones">
-           <i class="fa-solid fa-ruler-horizontal"> 410 m² </i>
-        </span>
-        <span class="icones">
-           <i class="fa-solid fa-bed"> 3</i>
-       </span>
-       <span class="icones">
-         <i class="fa-solid fa-shower">3</i>
-       </span>
-       
-       </span>
-           <i class="fa-solid fa-bath">3</i>
-       </span>
-       <span class="icones">
-         <i class="fa-solid fa-car"> 4</i>
-         </p>
-         <p class="valor">1.590.000,00</p>
-         <button class="whatsapp-button" id="90400">Negocie aqui</button>
-         
-     </article>
-      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-          <button class="next" onclick="moveSlide(1)">&#10095;</button>
-      
-     
-   </div>
+            <!-- Valor do imóvel -->
+            <p class="valor">535.704,00</p>
+
+            <!-- Botão de negociação -->
+            <button class="whatsapp-button" id="45256">Negocie aqui</button>
+        </article>
+
+        <!-- Segundo item do carrossel -->
+        <article class="cubo" id="q2">
+            <div class="quadrado img2"></div>
+            <p class="codigo">75398</p>
+            <p class="igual">TERRENO SETOR BUENO</p>
+            <p class="igual">
+                T-15, 00, SETOR BUENO, Goiânia -GO 74230-010
+            </p>
+            <p>
+                <span class="icones">
+                    <i class="fa-solid fa-ruler-horizontal"> 382m² </i>
+                </span>
+            </p>
+            <p class="valor">1.100.000,00</p>
+            <button class="whatsapp-button" id="75398">Negocie aqui</button>
+        </article>
+
+        <!-- Terceiro item do carrossel -->
+        <article class="cubo" id="q3">
+            <div class="quadrado img3"></div>
+            <p class="codigo">80943</p>
+            <p class="igual">APARTAMENTO</p>
+            <p class="igual">
+                Rua 25 A, 253, Setor Aeroporto, Goiânia -GO 74070-150
+            </p>
+            <p>
+                <span class="icones">
+                    <i class="fa-solid fa-ruler-horizontal"> 118.75m² </i>
+                </span>
+                <span class="icones">
+                    <i class="fa-solid fa-bed"> 3</i>
+                </span>
+                <span class="icones">
+                    <i class="fa-solid fa-shower"> 2</i>
+                </span>
+                <span class="icones">
+                    <i class="fa-solid fa-bath"> 1</i>
+                </span>
+                <span class="icones">
+                    <i class="fa-solid fa-car"> 2</i>
+                </span>
+            </p>
+            <p class="valor">690.000,00</p>
+            <button class="whatsapp-button" id="80943">Negocie aqui</button>
+        </article>
+
+        <!-- Quarto item do carrossel -->
+        <article class="cubo" id="q4">
+            <div class="quadrado img4"></div>
+            <p class="codigo">90400</p>
+            <p class="igual">Casa Jardins Capiri, Senador Canedo</p>
+            <p class="igual">
+                Condomínio Jardins Capiri<br>Quadra 01 Lote 10
+            </p>
+            <p>
+                <span class="icones">
+                    <i class="fa-solid fa-ruler-horizontal"> 410m² </i>
+                </span>
+                <span class="icones">
+                    <i class="fa-solid fa-bed"> 3</i>
+                </span>
+                <span class="icones">
+                    <i class="fa-solid fa-shower"> 3</i>
+                </span>
+                <span class="icones">
+                    <i class="fa-solid fa-bath"> 3</i>
+                </span>
+                <span class="icones">
+                    <i class="fa-solid fa-car"> 4</i>
+                </span>
+            </p>
+            <p class="valor">1.590.000,00</p>
+            <button class="whatsapp-button" id="90400">Negocie aqui</button>
+        </article>
+    </div>
+
 
    
  <!-- Modal para o Carrossel -->
@@ -375,90 +327,76 @@ display: flex;
      </div>
    </div>
  </div>
-   
-<footer class="roda-pe">
-   <div>
-      <p>
-         para conferir alguns lançamentos da my broker clique nos links abaixo
-      </p>
-      <a href=""> <p>
-      
-      </p>
-   </a>
-   </div>
-   <h1>
-      me siga nas redes sociais 
-   </h1>
+ <footer class="roda-pe">
+   <!-- Rodapé do site -->
    <div class="controle">
- <div class="redes_sociais zap"><a href="https://web.whatsapp.com/send?phone=556286254895" id="contato" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #f9fafa;"></i></a></div> 
-
-
- <div class="redes_sociais instagram"> <a href="https://www.instagram.com/ronaldobrokerofc/profilecard/?igsh=cTF2cDVoNHZ2M2lm" target="_blank"> <i class="fa-brands fa-instagram" style="color: #fcfcfc;"></i>
-</a></div> 
-
-<div class="redes_sociais facebook" > <a href="#" target="_blank">
-   <i class="fa-brands fa-facebook-f" style="color: #f2f0e8;"></i>
-  </a>    </div> 
-
- 
-</div>
+       <!-- Ícone de rede social do Instagram com link -->
+       <div class="redes_sociais instagram"> 
+           <a href="https://www.instagram.com/ronaldobrokerofc/profilecard/?igsh=cTF2cDVoNHZ2M2lm" target="_blank">
+               <i class="fa-brands fa-instagram" style="color: #fcfcfc;"></i>
+           </a>
+       </div> 
+   </div>
 </footer>
 
-
+<!-- Botão flutuante do WhatsApp -->
 <div class="buttonzap" id="whatsapp">
-   <a href="https://web.whatsapp.com/send?phone=556286254895" class="icone" id="whatsapp"    
-    target="_blank"><i class="fab fa-whatsapp"></i></a>
-   </div>
+   <a href="https://web.whatsapp.com/send?phone=556286254895" class="icone" id="whatsapp" target="_blank">
+       <i class="fab fa-whatsapp"></i>
+   </a>
+</div>
+
 <script>
-   let currentIndex = 0;
+   let currentIndex = 0; // Índice atual do slide no carrossel
 
-function moveSlide(direction) {
-    const slides = document.querySelectorAll('#q1,#q2,#q3,#q4');
-    const totalSlides = slides.length;
+   /**
+    * Move o carrossel de slides em uma direção (anterior ou próxima).
+    * @param {number} direction - Direção do movimento: -1 (anterior), 1 (próximo).
+    */
+   function moveSlide(direction) {
+       const slides = document.querySelectorAll('#q1,#q2,#q3,#q4'); // Seleciona todos os slides
+       const totalSlides = slides.length;
 
-    currentIndex += direction;
+       currentIndex += direction; // Atualiza o índice com base na direção
 
-    if (currentIndex < 0) {
-        currentIndex = totalSlides - 1; // Volta para o último slide
-    } else if (currentIndex >= totalSlides) {
-        currentIndex = 0; // Volta para o primeiro slide
-    }
+       // Verifica os limites do índice e ajusta para criar um looping
+       if (currentIndex < 0) {
+           currentIndex = totalSlides - 1; // Volta para o último slide
+       } else if (currentIndex >= totalSlides) {
+           currentIndex = 0; // Volta para o primeiro slide
+       }
 
-    const offset = -currentIndex * 100; // Move o carrossel
-    slides.forEach(slide => {
-        slide.style.transform = `translateX(${offset}%)`;
-    });
-    cubo
-}
+       // Calcula o deslocamento necessário para mostrar o slide atual
+       const offset = -currentIndex * 100;
+       slides.forEach(slide => {
+           slide.style.transform = `translateX(${offset}%)`; // Aplica o deslocamento aos slides
+       });
+   }
 
-const phoneNumber = '556286254895'; // Substitua pelo número desejado
+   // Número de telefone para contato no WhatsApp
+   const phoneNumber = '556286254895';
 
-const messages = {
-   45256: 'Olá! Gostaria de saber mais sobre a Casa de codigo 45256.',
-    75398: 'Olá! Gostaria de saber mais sobre a Casa de codigo 75398.',
-       80943: 'Olá! Gostaria de saber mais sobre a casa de codigo 80943.',
-            90400:'ola, gostaria de saber mais sobre a casa capiri'
+   // Mensagens pré-definidas para cada botão de imóvel
+   const messages = {
+       45256: 'Olá! Gostaria de saber mais sobre a Casa de código 45256.',
+       75398: 'Olá! Gostaria de saber mais sobre a Casa de código 75398.',
+       80943: 'Olá! Gostaria de saber mais sobre a Casa de código 80943.',
+       90400: 'Olá! Gostaria de saber mais sobre a casa Jardins Capiri.'
+   };
 
-      
-};
-
-document.querySelectorAll('.whatsapp-button').forEach(button => {
-    button.onclick = function() {
-        const messageKey = this.id;
-        const message = encodeURIComponent(messages[messageKey]);
-        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-        window.open(whatsappUrl, '_blank'); // Abre o WhatsApp com a mensagem
-    };
-});
-
-
+   // Adiciona evento de clique para cada botão de WhatsApp
+   document.querySelectorAll('.whatsapp-button').forEach(button => {
+       button.onclick = function() {
+           const messageKey = this.id; // Pega o ID do botão clicado
+           const message = encodeURIComponent(messages[messageKey]); // Codifica a mensagem
+           const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`; // Cria a URL do WhatsApp
+           window.open(whatsappUrl, '_blank'); // Abre o link do WhatsApp em uma nova aba
+       };
+   });
 </script>
 
-
+<!-- Inclui o arquivo de script para o menu -->
 <script src="menu.js"></script>
-
-
 </body>
-
 </html>
 

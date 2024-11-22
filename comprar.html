@@ -1,315 +1,294 @@
 <html lang="pt-br">
 <head>
+    <!-- Configuração do idioma da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
     <title>RONADO BROKER</title>
+
+    <!-- Ícone de atalho (favicon) -->
     <link rel="shortcut icon" href="imagens/imagem008.png" type="image/x-icon">
+
+    <!-- Links para estilos e bibliotecas externas -->
+    <!-- Fonte Awesome para ícones -->
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Ícones do Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Fonte Awesome (link incorreto, deve ser corrigido ou removido) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesume/6.0.0/css/all.min.css">
    
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="sstyle.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sstyle.css">
 <link rel="stylesheet" href="mobile.css">
-  <style>
-   .quadrado{
-      display: flex;
-      flex-direction: row;
-   }
-    /* Estilo para o desfoque de fundo */
-    .blurred-background {
-          filter: blur(5px);
-        }
-      
-        /* Estilos do Modal */
-        .modal {
-          display: none;
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.5);
-          z-index: 1000;
-        }
-      
-        .modal-content {
-          background: rgba(255, 255, 255, 0);
-          padding: 20px;
-          width: 80%;
-          margin: auto;
-          top: 10%;
-          position: relative;
-        }
-      
-        .close {
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          font-size: 24px;
-          cursor: pointer;
+    <!-- Estilos embutidos -->
+    <style>
+        /* Estilo para exibição em linha flexível */
+        .quadrado {
+            display: flex;
+            flex-direction: row;
         }
 
-  </style>
+        /* Efeito de desfoque no fundo */
+        .blurred-background {
+            filter: blur(5px);
+        }
+      
+        /* Estilos para o modal */
+        .modal {
+            display: none; /* Inicialmente escondido */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+            z-index: 1000; /* Aparece acima de outros elementos */
+        }
+      
+        /* Conteúdo do modal */
+        .modal-content {
+            background: rgba(255, 255, 255, 0); /* Fundo transparente */
+            padding: 20px;
+            width: 80%;
+            margin: auto;
+            top: 10%;
+            position: relative;
+            text-align: center;
+        }
+      
+        /* Botão de fechamento do modal */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
    
-<nav class="basico">
-   <div class="roow">
-      <img src="imagens/imagem008.png" alt="imagem de perdfil" class="foto-perfil" >
-      <p>ronaldo broker</p></div>
+<!-- Barra lateral de navegação -->
+<nav class="sidebar">
+    <!-- Perfil do usuário na barra lateral -->
+    <div class="perfil">
+        <img src="imagens/imagem008.png" alt="imagem de perfil" class="foto-perfil">
+        <p class="txt-perfil">ronaldo broker</p>
+    </div>
+
+    <!-- Botão para expandir/recolher a navegação -->
     <div class="navigation">
         <i class="bi bi-list" id="btn-exp"></i>
     </div>
-          <ul>
-            <li class="list ">
-               <a href="index.html">
-            <span class="icon" > <i class="fa-solid fa-house"></i></span>
-            <span class="txt-link">home</span>
-              </a>
-           </li>
-    
-           <li class="list ativo">
-            <a href="comprar.html">
-         <span class="icon"> <i class="bi bi-houses-fill"></i></span>
-         <span class="txt-link"> compra imoveis</span>
-           </a>
+
+    <!-- Lista de links de navegação -->
+    <ul>
+        <!-- Link para a página inicial -->
+        <li class="list">
+            <a href="index.html">
+                <span class="icon"><i class="fa-solid fa-house"></i></span>
+                <span class="txt-link">Home</span>
+            </a>
         </li>
     
+        <!-- Link ativo para a página de compra de imóveis -->
+        <li class="list ativo">
+            <a href="comprar.html">
+                <span class="icon"><i class="bi bi-houses-fill"></i></span>
+                <span class="txt-link">Compra Imóveis</span>
+            </a>
+        </li>
+    
+        <!-- Link externo para avaliação imobiliária -->
         <li class="list">
-         <a href="lançamentos.html">
-      <span class="icon"> <i class="bi bi-houses-fill"></i></span>
-      <span class="txt-link">lançamentos</span>
-      <span>
-         
-      </span>
-        </a>
-     </li>
-
-        <li class="list">
-         <a href="https://airgo.bio/7a45a48f" target="_blank">
-         <span class="icon"> <i class="bi bi-buildings-fill"></i></span>
-         <span class="txt-link">avaliaçao imobiliaria</span>
-           </a>
+            <a href="https://airgo.bio/7a45a48f" target="_blank">
+                <span class="icon"><i class="bi bi-buildings-fill"></i></span>
+                <span class="txt-link">Avaliação Imobiliária</span>
+            </a>
         </li>
        
+        <!-- Link para a página "Sobre Mim" -->
         <li class="list">
-            <a href="sb-index.html">
-         <span class="icon">   <i class="bi bi-person-vcard"></i></span>
-         <span class="txt-link">sobre mim</span>
-         <span>
-            
-         </span>
-           </a>
+            <a href="sobre-mim.html">
+                <span class="icon"><i class="bi bi-person-vcard"></i></span>
+                <span class="txt-link">Sobre Mim</span>
+            </a>
         </li>
-
-        
-         </ul>
-    
+    </ul>
 </nav>
 
+<div class="row">
+  <!-- Primeiro card de imóvel -->
+  <nav id="cubo">
+    <!-- Imagem do imóvel (substituível por uma imagem real) -->
+    <div class="quadrado img1"></div>
+    <!-- Código do imóvel -->
+    <p class="codigo">45256</p>
+    <!-- Descrição do imóvel -->
+    <p class="igual">TERRENO CONDOMINIO</p>
+    <!-- Link para o Google Maps -->
+    <a href="https://maps.app.goo.gl/GmX42HEP3QdmoA3BA?g_st=iw" target="_blank">
+      <p class="igual">Avenida Pinheiros, Parqville Pinheiros,<br> Aparecida de Goiânia -GO</p>
+    </a>
+    <!-- Detalhes do imóvel (área) -->
+    <span class="icones">
+      <i class="fa-solid fa-ruler-horizontal">446m²</i>
+    </span>
+    <!-- Valor do imóvel -->
+    <p class="valor">535.704,00</p>
+    <!-- Botão para iniciar conversa no WhatsApp -->
+    <button class="whatsapp-button" id="75398">negocie aqui</button>
+  </nav>
 
+  <!-- Segundo card de imóvel -->
+  <nav id="cubo">
+    <div class="quadrado img2"></div>
+    <p class="codigo">75398</p>
+    <p class="igual">TERRENO SETOR BUENO</p>
+    <a href="https://maps.app.goo.gl/M8rgX8BcXUon3Pt76?g_st=iw" target="_blank">
+      <p class="igual">T-15, 00, SETOR BUENO,<br> Goiânia -GO 74230-010</p>
+    </a>
+    <span class="icones">
+      <i class="fa-solid fa-ruler-horizontal">382m²</i>
+    </span>
+    <p class="valor">1.100.000,00</p>
+    <button class="whatsapp-button" id="75398">negocie aqui</button>
+  </nav>
 
-  
-<div class="row" >
-<nav id="cubo" >
-      
-   <div class="quadrado img1">
-  
-   </div>
-   <p class="codigo">45256</p>
-   <p class="igual">TERRENO CONDOMINIO</p>
-   <p class="igual">Avenida Pinheiros, Parqville Pinheiros,<br> Aparecida de Goiânia -GO</p>
-   
-<span class="icones">
-<i class="fa-solid fa-ruler-horizontal">446m²</i>
-</span>
-
- 
-
-<p class="valor">
-   535.704,00
-</p>
-<button class="whatsapp-button" id="75398"> negocie aqui</button>
-</nav>
-
-<nav id="cubo" >
-  
-  <div class="quadrado img2" >
- 
-  </div>
-  <p class="codigo">75398</p>
-  <p class="igual">TERRENO SETOR BUENO</p>
-  <p class="igual">T-15, 00, SETOR BUENO,<br> Goiânia -GO
-   74230-010</p>
-  
-<span class="icones">
-<i class="fa-solid fa-ruler-horizontal"> 382m² </i>
-</span>
-
-<p class="valor">
-   1.100.000,00
-</p>
-<button class="whatsapp-button" id="75398"> negocie aqui</button>
-</nav>    
-
-<nav id="cubo" onclick="openModal('img3')">
-  
-  <div class="quadrado img3" >
- 
-  </div>
-  <p class="codigo">80943</p>
-  <p class="igual">APARTAMENTO</p>
-  <p class="igual">Rua 25 A, 253,<br> Setor Aeroporto, Goiânia -GO
-   74070-150</p>
-  
-<span class="icones">
-<i class="fa-solid fa-ruler-horizontal"> 118.75 m²  </i>
-</span>
- 
-<span class="icones">
-   <i class="fa-solid fa-bed"> 3</i>
-   </span>
-   <span class="icones">
-      <i class="fa-solid fa-shower">2</i>
-   <span class="icones">
-   <i class="fa-solid fa-bath"> 1</i>
-     
-   <span class="icones">
-   <i class="fa-solid fa-car"> 2</i>
-   </span>
-<p class="valor">
-   690.000,00
-</p>
-<button class="whatsapp-button" id="80943"><i class="fab fa-whatsapp"></i> negocie aqui</button>
-</nav>
-
-
+  <!-- Terceiro card de imóvel -->
+  <nav id="cubo" onclick="openModal('img3')">
+    <div class="quadrado img3 pointer"></div>
+    <p class="codigo">80943</p>
+    <p class="igual">APARTAMENTO</p>
+    <a href="https://maps.app.goo.gl/d6RdnfMmghkzb17W8?g_st=com.google.maps.preview.copy" target="_blank">
+      <p class="igual">Rua 25 A, 253,<br> Setor Aeroporto, Goiânia -GO 74070-150</p>
+    </a>
+    <span class="icones">
+      <i class="fa-solid fa-ruler-horizontal">118.75m²</i>
+    </span>
+    <!-- Detalhes adicionais do imóvel (quartos, banheiros, garagem) -->
+    <span class="icones"><i class="fa-solid fa-bed">3</i></span>
+    <span class="icones"><i class="fa-solid fa-shower">2</i></span>
+    <span class="icones"><i class="fa-solid fa-bath">1</i></span>
+    <span class="icones"><i class="fa-solid fa-car">2</i></span>
+    <p class="valor">690.000,00</p>
+    <button class="whatsapp-button" id="80943"><i class="fab fa-whatsapp"></i> negocie aqui</button>
+  </nav>
 </div>
-<nav id="cubo" onclick="openModal('img4')">
-   <div class="quadrado img4"></div>
-   <p class="codigo">80943</p>
-   <p class="igual">casa jaedins capiri, senador canedo</p>
-   <p class="igual">condominio jardins capiri<br> quadra 01 lote 10</p>
-   <span class="icones"><i class="fa-solid fa-ruler-horizontal">410 m²</i></span>
-   <span class="icones"><i class="fa-solid fa-bed">3</i></span>
-   <span class="icones"><i class="fa-solid fa-shower">3</i></span>
-   <span class="icones"><i class="fa-solid fa-bath">3</i></span>
-   <span class="icones"><i class="fa-solid fa-car">4</i></span>
-   <p class="valor">1.590.000,00</p>
-   <button class="whatsapp-button" id="90400"><i class="fab fa-whatsapp"></i> negocie aqui</button>
- </nav>
-</div>
+  <!-- Quarto card de imóvel -->
+  <nav id="cubo" onclick="openModal('img4')">
+    <div class="quadrado pointer img4"></div>
+    <p class="codigo">80943</p>
+    <p class="igual">casa jardins capri, senador canedo</p>
+    <a href="https://maps.app.goo.gl/FRAPaEbvZ9M8etsj8?g_st=com.google.maps.preview.copy" target="_blank">
+      <p class="igual">condominio jardins capri<br> quadra 01 lote 10</p>
+    </a>
+    <span class="icones"><i class="fa-solid fa-ruler-horizontal">410m²</i></span>
+    <span class="icones"><i class="fa-solid fa-bed">3</i></span>
+    <span class="icones"><i class="fa-solid fa-shower">3</i></span>
+    <span class="icones"><i class="fa-solid fa-bath">3</i></span>
+    <span class="icones"><i class="fa-solid fa-car">4</i></span>
+    <p class="valor">1.590.000,00</p>
+    <button class="whatsapp-button" id="90400"><i class="fab fa-whatsapp"></i> negocie aqui</button>
+  </nav>
 
 
-   <!-- Modal para o Carrossel -->
-   <div id="carouselModal" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <div class="carousel swiper">
-          <!-- Carrossel usando Swiper -->
-          <div class="swiper-wrapper" id="swiperWrapper"></div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </div>
+<!-- Modal para exibir carrossel de imagens -->
+<div id="carouselModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="carousel swiper">
+      <!-- Container do carrossel -->
+      <div class="swiper-wrapper" id="swiperWrapper"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
+  </div>
+</div>
 
-
-
+<!-- Rodapé com link para redes sociais -->
 <footer class="roda-pe">
-
-   <footer class="roda-pe">
-      <h1>
-         me siga nas redes sociais 
-      </h1>
-      <div class="controle">
-    <div class="redes_sociais zap"><a href="https://web.whatsapp.com/send?phone=556286254895" id="contato" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #f9fafa;"></i></a></div> 
-   
-   
-    <div class="redes_sociais instagram"> <a href="#" target="_blank"> <i class="fa-brands fa-instagram" style="color: #fcfcfc;"></i>
-   </a></div> 
-   
-   <div class="redes_sociais facebook" > <a href="#" target="_blank">
-      <i class="fa-brands fa-facebook-f" style="color: #f2f0e8;"></i>
-     </a>    </div> 
-   
-     <div class="redes_sociais X"> <a href="#" target="_blank" ><i class="fa-brands fa-x-twitter" style="color: #f7f7f7;"></i>
-   </a></div> 
-   </div>
+  <div class="controle">
+    <div class="redes_sociais instagram">
+      <a href="https://www.instagram.com/ronaldobrokerofc/profilecard/?igsh=cTF2cDVoNHZ2M2lm" target="_blank">
+        <i class="fa-brands fa-instagram" style="color: #fcfcfc;"></i>
+      </a>
+    </div>
+  </div>
 </footer>
 
+<!-- Botão flutuante para WhatsApp -->
 <div class="buttonzap" id="whatsapp">
-<a href="https://web.whatsapp.com/send?phone=556286254895" class="icone" id="whatsapp"    
- target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://web.whatsapp.com/send?phone=556286254895" class="icone" id="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </div>
 
+<!-- Scripts -->
 <script src="menu.js"></script>
-
 <script>
-const phoneNumber = '556286254895'; // Substitua pelo número desejado
+  // Código para configurar os botões do WhatsApp
+  const phoneNumber = '556286254895';
 
-const messages = {
-    45256: 'Olá! Gostaria de saber mais sobre a Casa de codigo 45256.',
-    75398: 'Olá! Gostaria de saber mais sobre a Casa de codigo 75398.',
-       80943: 'Olá! Gostaria de saber mais sobre a casa de codigo 80943.',
-              90400:'ola, gostaria de saber mais sobre a casa capiri',
- 
-      
-};
+  const messages = {
+    45256: 'Olá! Gostaria de saber mais sobre a Casa de código 45256.',
+    75398: 'Olá! Gostaria de saber mais sobre a Casa de código 75398.',
+    80943: 'Olá! Gostaria de saber mais sobre a Casa de código 80943.',
+    90400: 'Olá! Gostaria de saber mais sobre a casa Capri.',
+  };
 
-document.querySelectorAll('.whatsapp-button').forEach(button => {
+  document.querySelectorAll('.whatsapp-button').forEach(button => {
     button.onclick = function() {
-        const messageKey = this.id;
-        const message = encodeURIComponent(messages[messageKey]);
-        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-        window.open(whatsappUrl, '_blank'); // Abre o WhatsApp com a mensagem
+      const messageKey = this.id;
+      const message = encodeURIComponent(messages[messageKey]);
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+      window.open(whatsappUrl, '_blank');
     };
-}); 
-    function openModal(imgClass) {
-      document.querySelector('.row').classList.add('blurred-background');
-      document.getElementById('carouselModal').style.display = 'block';
-      initSwiper(imgClass);
-    }
-  
-    function closeModal() {
-      document.querySelector('.row').classList.remove('blurred-background');
-      document.getElementById('carouselModal').style.display = 'none';
-      document.getElementById('swiperWrapper').innerHTML = ''; // Limpa o carrossel ao fechar
-    }
-  
-    function initSwiper(imgClass) {
-      const swiperWrapper = document.getElementById('swiperWrapper');
-      // Define imagens para cada conjunto
-      const images = {
-        
-        
-        img3: ["imagens/ap-sala.jpg", "imagens/ap-varanda.jpg", "imagens/ap-cozinha.jpg","imagens/ap-corredores.jpg","imagens/ap-banheiro.jpg","imagens/ap-closet.jpg","imagens/ap-quarto.jpg","imagens/ap-suit.jpg","imagens/ap-quarto-2.jpg"],
-        img4:["imagens/capiri-img1.jpg","imagens/capiri-img2.jpg","imagens/capiri-garagem.jpg","imagens/capiri-garagem2.jpg","imagens/capiri-sala.jpg","imagens/capiri-cozinha.jpg","imagens/capiri-banheiro.jpg","imagens/capiri-pscina.jpg","imagens/capiri-pscina2.jpg"]
-      };
-      
-      // Adiciona as imagens ao swiperWrapper
-      images[imgClass].forEach(src => {
-        const slide = document.createElement('div');
-        slide.classList.add('swiper-slide');
-        slide.innerHTML = `<img src="${src}" alt="Imagem">`;
-        swiperWrapper.appendChild(slide);
-      });
-  
-      // Inicializa o Swiper (ou outro carrossel) para o modal
-      new Swiper('.carousel', {
-        loop: true,
-        pagination: { el: '.swiper-pagination', clickable: true },
-        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
-      });
-    }
+  });
 
+  // Funções para abrir e fechar o modal
+  function openModal(imgClass) {
+    document.querySelector('.row').classList.add('blurred-background');
+    document.getElementById('carouselModal').style.display = 'block';
+    initSwiper(imgClass);
+  }
+
+  function closeModal() {
+    document.querySelector('.row').classList.remove('blurred-background');
+    document.getElementById('carouselModal').style.display = 'none';
+    document.getElementById('swiperWrapper').innerHTML = '';
+  }
+
+  // Inicialização do carrossel (Swiper)
+  function initSwiper(imgClass) {
+    const swiperWrapper = document.getElementById('swiperWrapper');
+    const images = {
+      img3: ["imagens/ap-sala.jpg", "imagens/ap-varanda.jpg", "imagens/ap-cozinha.jpg", "imagens/ap-corredores.jpg", "imagens/ap-banheiro.jpg", "imagens/ap-closet.jpg", "imagens/ap-quarto.jpg", "imagens/ap-suit.jpg", "imagens/ap-quarto-2.jpg"],
+      img4: ["imagens/capiri-img1.jpg", "imagens/capiri-img2.jpg", "imagens/capiri-garagem.jpg", "imagens/capiri-garagem2.jpg", "imagens/capiri-sala.jpg", "imagens/capiri-cozinha.jpg", "imagens/capiri-banheiro.jpg", "imagens/capiri-piscina.jpg", "imagens/capiri-piscina2.jpg"]
+    };
+
+    images[imgClass].forEach(src => {
+      const slide = document.createElement('div');
+      slide.classList.add('swiper-slide');
+      slide.innerHTML = `<img src="${src}" alt="Imagem">`;
+      swiperWrapper.appendChild(slide);
+    });
+
+    new Swiper('.carousel', {
+      loop: true,
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
+    });
+  }
 </script>
 
-   <!-- Adicione o script do Swiper JS no fim do body -->
-   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!-- Importação do Swiper JS e CSS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 </body>
 
 </html>
