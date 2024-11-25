@@ -234,17 +234,17 @@ nav#cubo p {
 
 
 .img1 {
-  background-image: url(./terreno-condominio.jpg);
+  background-image: url(./terreno-condominio.png);
   background-position: center center;
 }
 
 .img2 {
-  background-image: url(./terreno.jpg);
+  background-image: url(./terreno.png);
   background-position: center center;
 }
 
 .img3 {
-  background-image: url(./apartamento.jpg);
+  background-image: url(./apartamento.png);
   background-position: center center;
 }
 
