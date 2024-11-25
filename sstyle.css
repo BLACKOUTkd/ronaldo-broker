@@ -67,7 +67,7 @@ header {
   right: 0;
   width: 714px;
   height: 452px;
-  background-image: url('./imagem002.png');
+  background-image: url('./imagem002.jpeg');
   background-position: bottom right;
   background-repeat: no-repeat;
 }
@@ -234,22 +234,22 @@ nav#cubo p {
 
 
 .img1 {
-  background-image: url(./terreno-condominio.jpeg);
+  background-image: url(./terreno-condominio.jpg);
   background-position: center center;
 }
 
 .img2 {
-  background-image: url(./terreno.jpeg);
+  background-image: url(./terreno.jpg);
   background-position: center center;
 }
 
 .img3 {
-  background-image: url(./apartamento.jpeg);
+  background-image: url(./apartamento.jpg);
   background-position: center center;
 }
 
 .img4 {
-  background-image: url(./faixada-capiri.jpeg);
+  background-image: url(./faixada-capiri.jpg);
   background-position: center center;
 }
 
