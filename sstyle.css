@@ -76,7 +76,7 @@ header {
   font-size: 37px;
   color: aliceblue;
   text-align: center;
-  padding-left: 700px;
+  padding-left: 800px;
 }
 
 .missao {
@@ -84,7 +84,7 @@ header {
   display: flex;
   color: rgb(17, 100, 253);
   padding-top: 240px;
-  padding-left: 380px;
+  padding-left: 420px;
   text-align: center;
   align-items: center;
 
@@ -198,9 +198,7 @@ nav#cubo p {
 
 }
 
-.codigo {
-  text-align: end;
-}
+
 
 .igual {
   text-align: start;
