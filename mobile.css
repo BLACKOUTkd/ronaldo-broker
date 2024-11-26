@@ -60,7 +60,7 @@ right: 100%;
   right: 0;
   width:700px;
 height: 700px;
-    background-image: url('imagens/imagem002.jpeg');
+    background-image: url('./imagem002.jpeg');
   background-position: bottom right;
   background-repeat: no-repeat;   
 }
