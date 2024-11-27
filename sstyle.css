@@ -84,7 +84,7 @@ header {
   display: flex;
   color: rgb(17, 100, 253);
   padding-top: 240px;
-  padding-left: 420px;
+  padding-left: 380px;
   text-align: center;
   align-items: center;
 
@@ -259,7 +259,6 @@ nav#cubo p {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 120px;
-  margin: 20px;
   margin-top: 92px;
 }
 
